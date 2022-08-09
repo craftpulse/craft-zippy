@@ -1,6 +1,6 @@
 {
     "name": "percipiolondon/craft-zipper",
-    "description": "Zip on or multiple assets",
+    "description": "Zip multiple assets",
     "type": "craft-plugin",
     "version": "3.0.0",
     "keywords": [

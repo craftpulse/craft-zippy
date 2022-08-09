@@ -14,6 +14,7 @@ use percipiolondon\zipper\Zipper;
 
 use Craft;
 use craft\web\Controller;
+use yii\web\Response;
 
 /**
  * Zipper Controller
@@ -46,34 +47,31 @@ class ZipperController extends Controller
      *         The actions must be in 'kebab-case'
      * @access protected
      */
-    protected $allowAnonymous = ['index', 'do-something'];
+    protected $allowAnonymous = true;
 
     // Public Methods
     // =========================================================================
 
     /**
-     * Handle a request going to our plugin's index action URL,
-     * e.g.: actions/zipper/zipper
+     * Handle the requests with the assets the user wants to zip,
+     * This is a post event
      *
-     * @return mixed
+     * @return Response|null
      */
-    public function actionIndex()
+    public function actionIndex(): ?Response
     {
-        $result = 'Welcome to the ZipperController actionIndex() method';
+        $this->requirePostRequest();
+        
+        $request = Craft::$app->getRequest();
 
-        return $result;
-    }
+        $files = $request->getBodyParam('files') ?? null;
+        $filename = $request->getBodyParam('slug') ?? '';
 
-    /**
-     * Handle a request going to our plugin's actionDoSomething URL,
-     * e.g.: actions/zipper/zipper/do-something
-     *
-     * @return mixed
-     */
-    public function actionDoSomething()
-    {
-        $result = 'Welcome to the ZipperController actionDoSomething() method';
+        if ($files) {
+            $archive = Zipper::$plugin->zipper->zip('eef_'.$filename, $files);
+            return Craft::$app->getResponse()->sendFile($archive, null, ['forceDownload' => true]);
+        }
 
-        return $result;
+        return null;
     }
 }
