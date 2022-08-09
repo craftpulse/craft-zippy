@@ -8,9 +8,9 @@
  * @copyright Copyright (c) 2022 Percipio London
  */
 
-namespace percipiolondoncraftzipper\zipper\controllers;
+namespace percipiolondon\zipper\controllers;
 
-use percipiolondoncraftzipper\zipper\Zipper;
+use percipiolondon\zipper\Zipper;
 
 use Craft;
 use craft\web\Controller;

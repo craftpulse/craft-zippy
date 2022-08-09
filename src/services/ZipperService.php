@@ -8,9 +8,9 @@
  * @copyright Copyright (c) 2022 Percipio London
  */
 
-namespace percipiolondoncraftzipper\zipper\services;
+namespace percipiolondon\zipper\services;
 
-use percipiolondoncraftzipper\zipper\Zipper;
+use percipiolondon\zipper\Zipper;
 
 use Craft;
 use craft\base\Component;
@@ -28,7 +28,7 @@ use craft\base\Component;
  * @package   Zipper
  * @since     3.0.0
  */
-class Zipper extends Component
+class ZipperService extends Component
 {
     // Public Methods
     // =========================================================================

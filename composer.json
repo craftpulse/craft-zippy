@@ -1,5 +1,5 @@
 {
-    "name": "percipiolondoncraftzipper/zipper",
+    "name": "percipiolondon/craft-zipper",
     "description": "Zip on or multiple assets",
     "type": "craft-plugin",
     "version": "3.0.0",
@@ -11,8 +11,8 @@
         "zipper"
     ],
     "support": {
-        "docs": "https://github.com/percipioglobal/zipper/blob/master/README.md",
-        "issues": "https://github.com/percipioglobal/zipper/issues"
+        "docs": "https://github.com/percipioglobal/craft-zipper/blob/master/README.md",
+        "issues": "https://github.com/percipioglobal/craft-zipper/issues"
     },
     "license": "MIT",
     "authors": [
@@ -32,13 +32,10 @@
     "extra": {
         "name": "Zipper",
         "handle": "zipper",
-        "developer": "Percipio London",
+        "developer": "percipiolondon",
         "developerUrl": "https://percipio.london",
-        "documentationUrl": "https://github.com/percipioglobal/zipper/blob/master/README.md",
-        "changelogUrl": "https://raw.githubusercontent.com/percipioglobal/zipper/master/CHANGELOG.md",
-        "components": {
-            "zipper": "percipiolondoncraftzipper\\zipper\\services\\Zipper"
-        },
-        "class": "percipiolondoncraftzipper\\zipper\\Zipper"
+        "documentationUrl": "https://github.com/percipioglobal/craft-zipper/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/percipioglobal/craft-zipper/master/CHANGELOG.md",
+        "class": "Plugin"
     }
 }

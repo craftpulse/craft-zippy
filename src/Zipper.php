@@ -8,9 +8,9 @@
  * @copyright Copyright (c) 2022 Percipio London
  */
 
-namespace percipiolondoncraftzipper\zipper;
+namespace percipiolondon\zipper;
 
-use percipiolondoncraftzipper\zipper\services\Zipper as ZipperService;
+use percipiolondon\zipper\services\ZipperService;
 
 use Craft;
 use craft\base\Plugin;
@@ -37,7 +37,7 @@ use yii\base\Event;
  *
  * @property  ZipperService $zipper
  */
-class Zipper extends Plugin
+class Zipper extends Pugin
 {
     // Static Properties
     // =========================================================================
@@ -73,6 +73,26 @@ class Zipper extends Plugin
      * @var bool
      */
     public $hasCpSection = false;
+
+
+
+    // Static Methods
+    // =========================================================================
+
+    /**
+     * @inheritdoc
+     */
+    public function __construct($id, $parent = null, array $config = [])
+    {
+        $config['components'] = [
+            // Register the vite service
+            'zipper' => [
+                'class' => ZipperService::class,
+            ],
+        ];
+
+        parent::__construct($id, $parent, $config);
+    }
 
     // Public Methods
     // =========================================================================
