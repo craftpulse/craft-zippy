@@ -37,7 +37,7 @@ use yii\base\Event;
  *
  * @property  ZipperService $zipper
  */
-class Zipper extends Pugin
+class Zipper extends Plugin
 {
     // Static Properties
     // =========================================================================
@@ -73,8 +73,6 @@ class Zipper extends Pugin
      * @var bool
      */
     public $hasCpSection = false;
-
-
 
     // Static Methods
     // =========================================================================

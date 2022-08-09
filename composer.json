@@ -26,7 +26,7 @@
     },
     "autoload": {
         "psr-4": {
-          "percipiolondoncraftzipper\\zipper\\": "src/"
+            "percipiolondon\\zipper\\": "src/"
         }
     },
     "extra": {
@@ -36,6 +36,6 @@
         "developerUrl": "https://percipio.london",
         "documentationUrl": "https://github.com/percipioglobal/craft-zipper/blob/master/README.md",
         "changelogUrl": "https://raw.githubusercontent.com/percipioglobal/craft-zipper/master/CHANGELOG.md",
-        "class": "Plugin"
+        "class": "percipiolondon\\zipper\\Zipper"
     }
 }
