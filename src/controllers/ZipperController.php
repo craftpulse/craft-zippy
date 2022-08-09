@@ -68,7 +68,7 @@ class ZipperController extends Controller
         $filename = $request->getBodyParam('slug') ?? '';
 
         if ($files) {
-            $archive = Zipper::$plugin->zipper->zip('eef_'.$filename, $files);
+            $archive = Zipper::$plugin->zipper->zip('eef-'.$filename, $files);
             return Craft::$app->getResponse()->sendFile($archive, null, ['forceDownload' => true]);
         }
 
