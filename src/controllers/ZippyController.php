@@ -8,9 +8,9 @@
  * @copyright Copyright (c) 2022 Percipio London
  */
 
-namespace percipiolondon\zipper\controllers;
+namespace percipiolondon\zippy\controllers;
 
-use percipiolondon\zipper\Zipper;
+use percipiolondon\zippy\Zippy;
 
 use Craft;
 use craft\web\Controller;
@@ -36,7 +36,7 @@ use yii\web\Response;
  * @package   Zipper
  * @since     3.0.0
  */
-class ZipperController extends Controller
+class ZippyController extends Controller
 {
 
     // Protected Properties
@@ -68,7 +68,7 @@ class ZipperController extends Controller
         $filename = $request->getBodyParam('slug') ?? '';
 
         if ($files) {
-            $archive = Zipper::$plugin->zipper->zip('eef-'.$filename, $files);
+            $archive = Zippy::$plugin->zippy->zip('eef-'.$filename, $files);
             return Craft::$app->getResponse()->sendFile($archive, null, ['forceDownload' => true]);
         }
 

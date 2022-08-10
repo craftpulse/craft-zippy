@@ -1,5 +1,5 @@
 {
-    "name": "percipiolondon/craft-zipper",
+    "name": "percipiolondon/craft-zippy",
     "description": "Zip multiple assets",
     "type": "craft-plugin",
     "version": "3.0.0",
@@ -8,11 +8,11 @@
         "cms",
         "craftcms",
         "craft-plugin",
-        "zipper"
+        "zippy"
     ],
     "support": {
-        "docs": "https://github.com/percipioglobal/craft-zipper/blob/master/README.md",
-        "issues": "https://github.com/percipioglobal/craft-zipper/issues"
+        "docs": "https://github.com/percipioglobal/craft-zippy/blob/master/README.md",
+        "issues": "https://github.com/percipioglobal/craft-zippy/issues"
     },
     "license": "MIT",
     "authors": [
@@ -30,12 +30,12 @@
         }
     },
     "extra": {
-        "name": "Zipper",
-        "handle": "zipper",
+        "name": "Zippy",
+        "handle": "zippy",
         "developer": "percipiolondon",
         "developerUrl": "https://percipio.london",
-        "documentationUrl": "https://github.com/percipioglobal/craft-zipper/blob/master/README.md",
-        "changelogUrl": "https://raw.githubusercontent.com/percipioglobal/craft-zipper/master/CHANGELOG.md",
-        "class": "percipiolondon\\zipper\\Zipper"
+        "documentationUrl": "https://github.com/percipioglobal/craft-zippy/blob/master/README.md",
+        "changelogUrl": "https://raw.githubusercontent.com/percipioglobal/craft-zippy/master/CHANGELOG.md",
+        "class": "percipiolondon\\zippy\\Zippy"
     }
 }

@@ -8,9 +8,9 @@
  * @copyright Copyright (c) 2022 Percipio London
  */
 
-namespace percipiolondon\zipper;
+namespace percipiolondon\zippy;
 
-use percipiolondon\zipper\services\ZipperService;
+use percipiolondon\zippy\services\ZippyService;
 
 use Craft;
 use craft\base\Plugin;
@@ -35,9 +35,9 @@ use yii\base\Event;
  * @package   Zipper
  * @since     3.0.0
  *
- * @property  ZipperService $zipper
+ * @property  ZippyService $zippy
  */
-class Zipper extends Plugin
+class Zippy extends Plugin
 {
     // Static Properties
     // =========================================================================
@@ -46,7 +46,7 @@ class Zipper extends Plugin
      * Static property that is an instance of this plugin class so that it can be accessed via
      * Zipper::$plugin
      *
-     * @var Zipper
+     * @var Zippy
      */
     public static $plugin;
 
@@ -84,8 +84,8 @@ class Zipper extends Plugin
     {
         $config['components'] = [
             // Register the vite service
-            'zipper' => [
-                'class' => ZipperService::class,
+            'zippy' => [
+                'class' => ZippyService::class,
             ],
         ];
 

@@ -8,10 +8,9 @@
  * @copyright Copyright (c) 2022 Percipio London
  */
 
-namespace percipiolondon\zipper\services;
+namespace percipiolondon\zippy\services;
 
 use craft\elements\Asset;
-use percipiolondon\zipper\Zipper;
 
 use Craft;
 use craft\base\Component;
@@ -32,7 +31,7 @@ use ZipArchive;
  * @package   Zipper
  * @since     3.0.0
  */
-class ZipperService extends Component
+class ZippyService extends Component
 {
     // Public Methods
     // =========================================================================
