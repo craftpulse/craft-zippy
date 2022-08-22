@@ -10,11 +10,10 @@
 
 namespace percipiolondon\zippy\services;
 
-use craft\elements\Asset;
-
 use Craft;
+
 use craft\base\Component;
-use yii\base\Exception;
+use craft\elements\Asset;
 use yii\helpers\FileHelper;
 use ZipArchive;
 
@@ -59,7 +58,7 @@ class ZippyService extends Component
         $zip = new ZipArchive();
 
         // Open the zip and fill it with the assets
-        if ($zip->open($tempFile, ZipArchive::CREATE) === TRUE) {
+        if ($zip->open($tempFile, ZipArchive::CREATE) === true) {
 
             // loop through the assets to set the contents and the name
             foreach ($assets as $asset) {

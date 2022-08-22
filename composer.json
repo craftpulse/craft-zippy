@@ -2,7 +2,7 @@
     "name": "percipiolondon/craft-zippy",
     "description": "Zip multiple assets",
     "type": "craft-plugin",
-    "version": "3.0.0",
+    "version": "4.0.0-beta.1",
     "keywords": [
         "craft",
         "cms",
@@ -22,7 +22,8 @@
         }
     ],
     "require": {
-        "craftcms/cms": "^3.0.0"
+        "php": "^8.0.2",
+        "craftcms/cms":"^4.0.0-alpha"
     },
     "require-dev": {
         "craftcms/phpstan":"dev-main"

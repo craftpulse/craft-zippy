@@ -10,10 +10,10 @@
 
 namespace percipiolondon\zippy\controllers;
 
-use percipiolondon\zippy\Zippy;
-
 use Craft;
+
 use craft\web\Controller;
+use percipiolondon\zippy\Zippy;
 use yii\web\Response;
 
 /**
@@ -38,7 +38,6 @@ use yii\web\Response;
  */
 class ZippyController extends Controller
 {
-
     // Protected Properties
     // =========================================================================
 
@@ -66,7 +65,7 @@ class ZippyController extends Controller
         $filename = $request->getBodyParam('slug') ?? '';
 
         if ($files) {
-            $archive = Zippy::$plugin->zippy->zip('eef-'.$filename, $files);
+            $archive = Zippy::$plugin->zippy->zip('eef-' . $filename, $files);
             return Craft::$app->getResponse()->sendFile($archive, null, ['forceDownload' => true]);
         }
 
