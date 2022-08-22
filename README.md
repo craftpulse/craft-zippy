@@ -1,4 +1,4 @@
-# Zipper plugin for Craft CMS 3.x
+# Zippy plugin for Craft CMS 3.x
 
 Zip on or multiple assets
 
@@ -18,23 +18,23 @@ To install the plugin, follow these instructions.
 
 2. Then tell Composer to load the plugin:
 
-        composer require percipioglobal/zipper
+        composer require percipioglobal/zippy
 
-3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Zipper.
+3. In the Control Panel, go to Settings → Plugins and click the “Install” button for Zippy.
 
-## Zipper Overview
-
--Insert text here-
-
-## Configuring Zipper
+## Zippy Overview
 
 -Insert text here-
 
-## Using Zipper
+## Configuring Zippy
 
 -Insert text here-
 
-## Zipper Roadmap
+## Using Zippy
+
+-Insert text here-
+
+## Zippy Roadmap
 
 Some things to do, and ideas for potential features:
 

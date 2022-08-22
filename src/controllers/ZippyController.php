@@ -1,6 +1,6 @@
 <?php
 /**
- * Zipper plugin for Craft CMS 3.x
+ * Zippy plugin for Craft CMS 3.x
  *
  * Zip on or multiple assets
  *
@@ -17,7 +17,7 @@ use craft\web\Controller;
 use yii\web\Response;
 
 /**
- * Zipper Controller
+ * Zippy Controller
  *
  * Generally speaking, controllers are the middlemen between the front end of
  * the CP/website and your plugin’s services. They contain action methods which
@@ -33,7 +33,7 @@ use yii\web\Response;
  * https://craftcms.com/docs/plugins/controllers
  *
  * @author    Percipio London
- * @package   Zipper
+ * @package   Zippy
  * @since     3.0.0
  */
 class ZippyController extends Controller

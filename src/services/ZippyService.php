@@ -1,6 +1,6 @@
 <?php
 /**
- * Zipper plugin for Craft CMS 3.x
+ * Zippy plugin for Craft CMS 3.x
  *
  * Zip on or multiple assets
  *
@@ -19,7 +19,7 @@ use yii\helpers\FileHelper;
 use ZipArchive;
 
 /**
- * Zipper Service
+ * Zippy Service
  *
  * All of your plugin’s business logic should go in services, including saving data,
  * retrieving data, etc. They provide APIs that your controllers, template variables,
@@ -28,7 +28,7 @@ use ZipArchive;
  * https://craftcms.com/docs/plugins/services
  *
  * @author    Percipio London
- * @package   Zipper
+ * @package   Zippy
  * @since     3.0.0
  */
 class ZippyService extends Component
@@ -41,7 +41,7 @@ class ZippyService extends Component
      *
      * From any other plugin file, call it like this:
      *
-     *     Zipper::$plugin->zipper->zip()
+     *     Zippy::$plugin->zippy->zip()
      *
      * @return string | null
      */

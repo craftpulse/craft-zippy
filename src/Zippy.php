@@ -1,6 +1,6 @@
 <?php
 /**
- * Zipper plugin for Craft CMS 3.x
+ * Zippy plugin for Craft CMS 3.x
  *
  * Zip on or multiple assets
  *
@@ -32,7 +32,7 @@ use yii\base\Event;
  * https://docs.craftcms.com/v3/extend/
  *
  * @author    Percipio London
- * @package   Zipper
+ * @package   Zippy
  * @since     3.0.0
  *
  * @property  ZippyService $zippy
@@ -44,7 +44,7 @@ class Zippy extends Plugin
 
     /**
      * Static property that is an instance of this plugin class so that it can be accessed via
-     * Zipper::$plugin
+     * Zippy::$plugin
      *
      * @var Zippy
      */
@@ -97,7 +97,7 @@ class Zippy extends Plugin
 
     /**
      * Set our $plugin static property to this class so that it can be accessed via
-     * Zipper::$plugin
+     * Zippy::$plugin
      *
      * Called after the plugin class is instantiated; do any one-time initialization
      * here such as hooks and events.
@@ -116,7 +116,7 @@ class Zippy extends Plugin
             UrlManager::class,
             UrlManager::EVENT_REGISTER_SITE_URL_RULES,
             function (RegisterUrlRulesEvent $event) {
-                $event->rules['siteActionTrigger1'] = 'zipper/zipper';
+                $event->rules['siteActionTrigger1'] = 'zippy/zippy';
             }
         );
 
@@ -125,7 +125,7 @@ class Zippy extends Plugin
             UrlManager::class,
             UrlManager::EVENT_REGISTER_CP_URL_RULES,
             function (RegisterUrlRulesEvent $event) {
-                $event->rules['cpActionTrigger1'] = 'zipper/zipper/do-something';
+                $event->rules['cpActionTrigger1'] = 'zippy/zippy/do-something';
             }
         );
 
@@ -160,7 +160,7 @@ class Zippy extends Plugin
  */
         Craft::info(
             Craft::t(
-                'zipper',
+                'zippy',
                 '{name} plugin loaded',
                 ['name' => $this->name]
             ),
