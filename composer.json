@@ -24,10 +24,16 @@
     "require": {
         "craftcms/cms": "^3.0.0"
     },
+    "require-dev": {
+        "craftcms/phpstan":"dev-main"
+    },
     "autoload": {
         "psr-4": {
             "percipiolondon\\zippy\\": "src/"
         }
+    },
+    "scripts": {
+        "phpstan": "phpstan --memory-limit=1G"
     },
     "extra": {
         "name": "Zippy",

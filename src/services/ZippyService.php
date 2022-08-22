@@ -75,7 +75,7 @@ class ZippyService extends Component
             return $tempFile;
         }
 
-        throw new Exception(Craft::t('Failed to generate the archive'));
+        Craft::error(Craft::t('zippy', 'Failed to generate the archive'));
 
         return null;
     }
