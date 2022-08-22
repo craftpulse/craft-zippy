@@ -1,6 +1,6 @@
 <?php
 /**
- * Zippy plugin for Craft CMS 3.x
+ * Zippy plugin for Craft CMS 4.x
  *
  * Zip on or multiple assets
  *
@@ -34,7 +34,7 @@ use yii\web\Response;
  *
  * @author    Percipio London
  * @package   Zippy
- * @since     3.0.0
+ * @since     4.0.0
  */
 class ZippyController extends Controller
 {

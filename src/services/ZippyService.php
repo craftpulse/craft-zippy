@@ -1,6 +1,6 @@
 <?php
 /**
- * Zippy plugin for Craft CMS 3.x
+ * Zippy plugin for Craft CMS 4.x
  *
  * Zip on or multiple assets
  *
